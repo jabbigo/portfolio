@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name — Building engineering & construction management student / designer." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#hero">YourName</a>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="menu-btn" class="menu-btn" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Hi, I'm <span class="accent">Your Name</span></h1>
+          <p class="lead">Building Engineering & Construction Management undergraduate — I design efficient, modern structures and build usable, beautiful portfolios.</p>
+          <div class="hero-ctas">
+            <a class="btn" href="#projects">See Projects</a>
+            <a class="btn btn-ghost" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="assets/profile.jpg" alt="Your Name portrait">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>I am an undergraduate in Building Engineering and Construction Management focused on modern cozy interiors, automation in construction, and materials research. I work with Revit, AutoCAD, ETABS, SAFE, Lumion, and Python for analysis and visualization.</p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Selected Projects</h2>
+        <div class="projects-grid">
+          <!-- Project card example: duplicate and edit -->
+          <article class="project-card">
+            <img src="assets/project1.jpg" alt="Project 1 screenshot">
+            <div class="project-info">
+              <h3>Riverside Wave Landscape</h3>
+              <p>Concept: Wave — a riverside seating and stepped dock integrated with commercial kiosks.</p>
+              <div class="proj-links">
+                <a href="#" target="_blank" rel="noopener">Case Study</a>
+                <a href="#" target="_blank" rel="noopener">Images</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="assets/project2.jpg" alt="Project 2 screenshot">
+            <div class="project-info">
+              <h3>Prefab RCC Pavilion</h3>
+              <p>Design & detailing for prefabricated RCC structure with modular joints.</p>
+              <div class="proj-links">
+                <a href="#" target="_blank" rel="noopener">Case Study</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Add more project cards -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill">
+            <h4>Software</h4>
+            <p>AutoCAD · Revit · SketchUp · Lumion · ETABS · Abaqus · SAFE · Primavera · Python</p>
+          </div>
+          <div class="skill">
+            <h4>Technical</h4>
+            <p>Structural design · Geopolymer composites · Prefab RCC · Construction automation · Project management</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Interested in working together or have a question? Drop a message.</p>
+
+        <!-- Replace FORM_ACTION with your Formspree action URL or your backend -->
+        <form id="contact-form" class="contact-form" method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
+          <label>
+            <span>Your name</span>
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            <span>Your email</span>
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn">Send</button>
+          </div>
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name — Built with ❤️</p>
+      <p class="footer-links">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a> ·
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
